@@ -13,8 +13,8 @@ def slack_user():
         "current_day": datetime.now().strftime('%A'),
         "utc_time": get_current_utc_time().strftime(format),
         "track": request.args.get("track"),
-        "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-        "github_repo_url": "https://github.com/username/repo",
+        "github_file_url": "https://github.com/onlyonedamola/HNG-Stage-1-Task/blob/master/main.py",
+        "github_repo_url": "https://github.com/onlyonedamola/HNG-Stage-1-Task",
         "status_code": 200
     }
     return jsonify(user_data), 200
